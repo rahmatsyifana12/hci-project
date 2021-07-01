@@ -1,0 +1,74 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Castoro&family=Noto+Sans:wght@400;700&family=Poppins:wght@500;600;700&display=swap'); */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: blue;
+    width: 100%;
+    position: fixed;
+    padding: 15px 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.navbar .menu li a {
+    color: white;
+    font-size: 20px;
+}
+
+.navbar .menu li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 60px;
+    margin: auto;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home {
+    display: flex;
+    background: url("img/img1.jpg") no-repeat center;
+    height: 100vh;
+    color: rgb(2, 2, 2);
+    min-height: 500px;
+}
+
+.home .max-width {
+    margin: auto 0 auto 100px;
+}
+
+.home #home-content .part-1 {
+    font-size: 30px;
+}
+
+.home #home-content .part-2 {
+    font-size: 50px;
+}
+
+.home #home-content .part-3 {
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.home #home-content .part-4 {
+    font-size: 40px;
+}
