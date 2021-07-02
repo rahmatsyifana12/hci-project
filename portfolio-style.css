@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Castoro&family=Noto+Sans:wght@400;700&family=Poppins:wght@500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova&family=Lato:wght@300;400;700&display=swap');
 
 * {
     margin: 0;
@@ -8,22 +8,46 @@
 }
 
 .navbar {
-    background-color: blue;
     width: 100%;
     position: fixed;
+    padding: 25px 0;
+    font-family: 'Lato', sans-serif;
+    transition: all 0.4s ease;
+}
+
+.navbar.stay {
     padding: 15px 0;
-    font-family: 'Poppins', sans-serif;
+    background-color: #ff000f;
+}
+
+.navbar.stay .logo span {
+    color: #000000;
+    transition: all 0.4s ease;
+}
+
+.navbar .logo span {
+    color: #ff000f;
 }
 
 .navbar .logo a {
-    color: white;
+    color: #fff;
     font-size: 40px;
     font-weight: 700;
 }
 
 .navbar .menu li a {
-    color: white;
+    color: #fff;
     font-size: 20px;
+    transition: color 0.4s ease;
+}
+
+.navbar .menu li a:hover {
+    color: #ff000f;;
+}
+
+.navbar.stay .menu li a:hover {
+    color: #000000;
+    transition: color 0.4s ease;
 }
 
 .navbar .menu li {
@@ -33,7 +57,7 @@
 }
 
 .max-width {
-    max-width: 1300px;
+    max-width: 1340px;
     padding: 0 60px;
     margin: auto;
 }
@@ -46,10 +70,11 @@
 
 .home {
     display: flex;
-    background: url("img/img1.jpg") no-repeat center;
+    background: url("img/img5.jpg") no-repeat center;
     height: 100vh;
-    color: rgb(2, 2, 2);
+    color: #fff;
     min-height: 500px;
+    font-family: 'Lato', sans-serif;
 }
 
 .home .max-width {
@@ -71,4 +96,8 @@
 
 .home #home-content .part-4 {
     font-size: 40px;
+}
+
+.home #home-content .part-4 span {
+    color: #ff000f;
 }
