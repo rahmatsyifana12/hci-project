@@ -9,5 +9,6 @@ $(document).ready( () => {
 
     $('.menu-bar').click( () => {
         $('.navbar .menu').toggleClass('appear');
+        $('.menu-bar i').toggleClass('appear');
     }); 
 });
