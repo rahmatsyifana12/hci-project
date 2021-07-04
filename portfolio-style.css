@@ -17,7 +17,7 @@
 }
 
 .navbar .logo span {
-    color: #ff000f;
+    color: yellowgreen;
 }
 
 .navbar .logo a {
@@ -28,7 +28,7 @@
 
 .navbar.stay {
     padding: 15px 0;
-    background-color: #ff000f;
+    background-color: yellowgreen;
 }
 
 .navbar.stay .logo span {
@@ -43,7 +43,7 @@
 }
 
 .navbar .menu li a:hover {
-    color: #ff000f;;
+    color: yellowgreen;
 }
 
 .navbar.stay .menu li a:hover {
@@ -54,7 +54,7 @@
 .navbar .menu li {
     display: inline-block;
     list-style: none;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 .max-width {
@@ -69,12 +69,10 @@
     justify-content: space-between;
 }
 
-
-
 /* home styling  */
 .home {
     display: flex;
-    background: url("img/img5.jpg") no-repeat center;
+    background: url("img/home-img.jpg") no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
@@ -87,6 +85,7 @@
 
 .home #home-content .part-1 {
     font-size: 30px;
+    font-weight: 600;
 }
 
 .home #home-content .part-2 {
@@ -104,5 +103,6 @@
 }
 
 .home #home-content .part-4 span {
-    color: #ff000f;
+    color: yellowgreen;
+    font-weight: 600;
 }
