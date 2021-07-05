@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bona+Nova&family=Lato:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
 
 * {
     margin: 0;
@@ -20,6 +21,7 @@
     padding: 25px 0;
     font-family: 'Lato', sans-serif;
     transition: all 0.4s ease;
+    z-index: 800;
 }
 
 .navbar .logo span {
@@ -157,6 +159,70 @@
     font-weight: 600;
 }
 
+
+/* about me styling */
+.aboutme {
+    font-family: 'Lato', sans-serif;
+    padding-top: 100px;
+}
+
+.aboutme .title {
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.aboutme-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.aboutme-content .col-left {
+    width: 45%;
+}
+
+.aboutme-content .col-left img {
+    width: 380px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.aboutme-content .col-right {
+    width: 55%;
+}
+
+.aboutme-content .col-right .top {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.aboutme-content .col-right .top span {
+    color: yellowgreen;
+}
+
+.aboutme-content .col-right .cv {
+    text-align: justify;
+    background-color: yellowgreen;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 18px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+
+.aboutme-content .col-right .cv:hover {
+    background-color: green;
+}
+
+
 @media (max-width: 1919px) {
     .home .max-width {
         margin: auto 0 auto 0;
@@ -182,6 +248,14 @@
         font-size: 40px;
         margin: 10px 0;
     }
+
+    .aboutme-content .col-left {
+        width: 50%;
+    }
+
+    .aboutme-content .col-right {
+        width: 50%;
+    }
 }
 
 @media (max-width: 800px) {
@@ -202,5 +276,19 @@
     .home #home-content .part-4 {
         font-size: 40px;
         margin: 10px 0;
+    }
+}
+
+@media (max-width: 1283px) {
+    .aboutme-content .col-left img {
+        width: 330px;
+        height: 330px;
+    }
+}
+
+@media (max-width: 1138px) {
+    .aboutme-content .col-left img {
+        width: 300px;
+        height: 300px;
     }
 }
