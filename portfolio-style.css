@@ -358,7 +358,7 @@
     content: "get in touch";
 }
 
-.contact-content .left .top {
+.contact-content .left .top  {
     font-size: 23px;
     font-weight: 600;
     margin-bottom: 10px;
@@ -368,7 +368,7 @@
     width: calc(50% - 30px);
 }
 
-.contact .skills-content .left p {
+.contact .skills-content .right p {
     text-align: justify;
 }
 
@@ -397,6 +397,57 @@
 
 .contact .skills-content .row-contact #address {
     font-size: 26px;
+}
+
+.right form .field input, .right form .contents textarea {
+    height: 40px;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+    margin-bottom: 15px;
+    padding: 0 12px;
+}
+
+.right form .field input:hover {
+    border-color: #000000;
+}
+
+.right form .contents textarea:hover {
+    border-color: #000000;
+}
+
+.right form .contents textarea {
+    padding-top: 10px;
+    height: 100px;
+    resize: none;
+}
+
+.right .top {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.right .send button {
+    text-align: justify;
+    background-color: yellowgreen;
+    color: white;
+    font-size: 20px;
+    display: inline-block;
+    padding: 10px 30px;
+    /* margin-top: 18px; */
+    border-radius: 6px;
+    transition: all 0.4s ease;
+    border-color: yellowgreen;
+}
+
+.right .send button:hover {
+    background-color: green;
+    border-color: green;
+    transition: all 0.4s ease;
 }
 
 /* interaktif styling  */
