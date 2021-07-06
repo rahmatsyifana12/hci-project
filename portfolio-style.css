@@ -14,7 +14,7 @@
     margin: auto;
 }
 
-.aboutme, .skills, .my-teams {
+.aboutme, .skills, .my-teams, .contact {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -356,6 +356,47 @@
 
 .contact .title::after {
     content: "get in touch";
+}
+
+.contact-content .left .top {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .skills-content .col {
+    width: calc(50% - 30px);
+}
+
+.contact .skills-content .left p {
+    text-align: justify;
+}
+
+.contact .skills-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .skills-content .row-contact {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .skills-content .row-contact .info-contact {
+    margin-left: 23px;
+}
+
+.contact .skills-content .row-contact i {
+    font-size: 20px;
+    color: yellowgreen;
+}
+
+.contact .skills-content .row-contact .info-contact .header {
+    font-weight: 600;
+}
+
+.contact .skills-content .row-contact #address {
+    font-size: 26px;
 }
 
 /* interaktif styling  */
