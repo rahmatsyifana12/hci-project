@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 
 .max-width {
@@ -14,7 +15,7 @@
     margin: auto;
 }
 
-.aboutme, .skills, .my-teams, .contact {
+.aboutme, .skills, .my-teams, .contact, footer {
     font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -126,7 +127,6 @@
 /* about me styling */
 .aboutme {
     padding-top: 100px;
-    padding-bottom: 30px;
 }
 
 .title {
@@ -217,7 +217,7 @@
 /* skills styling */
 
 .skills {
-    padding-top: 70px;
+    padding-top: 100px;
     padding-bottom: 30px;
 }
 
@@ -358,10 +358,8 @@
     content: "get in touch";
 }
 
-.contact-content .left .top  {
-    font-size: 23px;
-    font-weight: 600;
-    margin-bottom: 10px;
+.contact .skills-content .left {
+    margin-top: -40px;
 }
 
 .contact .skills-content .col {
@@ -448,6 +446,20 @@
     background-color: green;
     border-color: green;
     transition: all 0.4s ease;
+}
+
+/* footer styling */
+footer {
+    margin-top: 20px;
+    background-color: rgb(24, 23, 23);
+    padding: 22px 25px;
+    color: white;
+
+}
+
+footer .container {
+    width: 281px;
+    margin: auto;
 }
 
 /* interaktif styling  */

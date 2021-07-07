@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Portfolio</title>
         <link rel="stylesheet" href="portfolio-style.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
         </script>
@@ -13,28 +14,28 @@
             <div class="max-width">
                 <div class="logo"><a href="#">Port<span>folio</span></a></div>
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Teams</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#aboutme">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#my-teams">Teams</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div class="menu-bar">
                     <i class="fas fa-bars"></i>
                 </div>
             </div>
         </div>
-        <div class="home">
+        <div class="home" id="home">
             <div class="max-width">
                 <div id="home-content">
                     <div class="part-1">Welcome,</div><br>
                     <div class="part-2">My name is</div>
                     <div class="part-3">Rahmat Syifana Jaelani</div>
-                    <div class="part-4">I am a <span>Programmer</span></div>
+                    <div class="part-4">I am a <span class="type"></span></div>
                 </div>
             </div>
         </div>
-        <div class="aboutme">
+        <div class="aboutme" id="aboutme">
             <div class="max-width">
                 <div class="title">About me</div>
                 <div class="aboutme-content">
@@ -49,7 +50,7 @@
                 </div>
             </div>
         </div>
-        <div class="skills">
+        <div class="skills" id="skills">
             <div class="max-width">
                 <div class="title">My skills</div>
                 <div class="skills-content">
@@ -97,7 +98,7 @@
                 </div>
             </div>
         </div>
-        <div class="my-teams">
+        <div class="my-teams" id="my-teams">
             <div class="max-width">
                 <div class="title">My teams</div>
                 <div class="container">
@@ -132,7 +133,7 @@
                 </div>
             </div>
         </div>
-        <div class="contact">
+        <div class="contact" id="contact">
             <div class="max-width">
                 <div class="title">Contact me</div>
                 <div class="skills-content">
@@ -194,6 +195,11 @@
                 </div>
             </div>
         </div>
+        <footer>
+            <div class="container">
+                <i class="far fa-copyright"></i><span> Copyright 2021 Rahmat Syifana Jaelani</span>
+            </div>
+        </footer>
         
         <script src="portfolio-script.js"></script>
     </body>

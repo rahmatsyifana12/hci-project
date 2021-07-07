@@ -12,11 +12,10 @@ $(document).ready( () => {
         $('.menu-bar i').toggleClass('appear');
     }); 
 
-    // var scroll_link = $('.point');
-    // scroll_link.click(function(e){
-    //     e.preventDefault();
-    //     $('body,html').animate({
-    //         scrollTop: $(this.hash).offset().top
-    //     }, 1000);
-    // });
+    let typing = new Typed('.type', {
+        strings: ['Programmer', 'Student', 'Developer', 'Freelancer'],
+        typeSpeed: 100,
+        backSpeed: 70,
+        loop: true
+    });
 });
