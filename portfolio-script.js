@@ -14,7 +14,7 @@ $(document).ready( () => {
 
     let typing = new Typed('.type', {
         strings: ['Programmer', 'Student', 'Developer', 'Freelancer'],
-        typeSpeed: 100,
+        typeSpeed: 90,
         backSpeed: 70,
         loop: true
     });
