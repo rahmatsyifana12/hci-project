@@ -162,7 +162,7 @@
     transform: translateX(-50%);
 }
 
-.aboutme-content, .skills-content {
+.aboutme-content, .skills-content, .contact-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -354,42 +354,48 @@
     padding-bottom: 30px;
 }
 
+.contact-content .left .top {
+    font-size: 23px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
 .contact .title::after {
     content: "get in touch";
 }
 
-.contact .skills-content .left {
+.contact .contact-content .left {
     margin-top: -40px;
 }
 
-.contact .skills-content .col {
+.contact .contact-content .col {
     width: calc(50% - 30px);
 }
 
-.contact .skills-content .right p {
+.contact .contact-content .right p {
     text-align: justify;
 }
 
-.contact .skills-content .left .icons {
+.contact .contact-content .left .icons {
     margin: 10px 0;
 }
 
-.contact .skills-content .row-contact {
+.contact .contact-content .row-contact {
     display: flex;
     height: 65px;
     align-items: center;
 }
 
-.contact .skills-content .row-contact .info-contact {
+.contact .contact-content .row-contact .info-contact {
     margin-left: 23px;
 }
 
-.contact .skills-content .row-contact i {
+.contact .contact-content .row-contact i {
     font-size: 20px;
     color: yellowgreen;
 }
 
-.contact .skills-content .row-contact .info-contact .header {
+.contact .contact-content .row-contact .info-contact .header {
     font-weight: 600;
 }
 
@@ -446,6 +452,7 @@
     background-color: green;
     border-color: green;
     transition: all 0.4s ease;
+    cursor: pointer;
 }
 
 /* footer styling */
