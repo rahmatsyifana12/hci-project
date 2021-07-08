@@ -1,6 +1,6 @@
 let hole = document.getElementById('hole');
 let block = document.getElementById('block');
-let ball = document.getElementById('ball');
+let bird = document.getElementById('bird');
 let point = document.getElementById('point-display');
 let jumping = 0;
 let score = 0;
@@ -28,11 +28,11 @@ function flap() {
     jumping = 1;
     let jumpCount = 0;
     let jumpInterval = setInterval(() => {
-        let ballPos = parseInt(window.getComputedStyle(ball).getPropertyValue('top'));
-        ball.style.top = (ballPos - 5) + 'px';
+        let ballPos = parseInt(window.getComputedStyle(bird).getPropertyValue('top'));
+        bird.style.top = (ballPos - 5) + 'px';
         
         if (ballPos > 6 && jumpCount < 20) {
-            ball.style.top = (ballPos - 3) + 'px';
+            bird.style.top = (ballPos - 3) + 'px';
         }
         
         if (jumpCount > 18) {
@@ -53,10 +53,10 @@ document.addEventListener('click', () => {
     hole.style.animation = '';  
     
     gravity = setInterval( () => {
-        let ballPos = parseInt(window.getComputedStyle(ball).getPropertyValue('top'));
+        let ballPos = parseInt(window.getComputedStyle(bird).getPropertyValue('top'));
         
         if (jumping == 0) {
-            ball.style.top = (ballPos + 3) + 'px';
+            bird.style.top = (ballPos + 3) + 'px';
         }
         
         let blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue('left'));
@@ -67,7 +67,7 @@ document.addEventListener('click', () => {
             alert('Game Over! Click OK to try again.');
             
             hole.style.top = -200 + 'px';
-            ball.style.top = -400 + 'px';
+            bird.style.top = -400 + 'px';
             score = 0;
             
             block.style.animation = 'none';
