@@ -13,9 +13,9 @@ $(document).ready( () => {
     }); 
 
     let typing = new Typed('.type', {
-        strings: ['Programmer', 'Student', 'Developer', 'Freelancer'],
-        typeSpeed: 90,
-        backSpeed: 70,
+        strings: ['Hello there', 'Welcome', 'Nice to see you', 'Have a nice day'],
+        typeSpeed: 80,
+        backSpeed: 80,
         loop: true
     });
 });
