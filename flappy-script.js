@@ -69,6 +69,7 @@ document.addEventListener('click', () => {
             hole.style.top = -200 + 'px';
             bird.style.top = -400 + 'px';
             score = 0;
+            point.innerHTML = 'Score: ' + score;
             
             block.style.animation = 'none';
             hole.style.animation = 'none';
